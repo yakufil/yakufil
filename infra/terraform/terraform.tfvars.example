@@ -1,0 +1,9 @@
+project        = "yakufil"
+region         = "us-east-1"
+aws_profile    = "default"
+environment    = "prod"
+aws_account_id = ""
+
+github_repo            = "CHANGE_ME"
+github_branch          = "main"
+github_oidc_sub_prefix = "CHANGE_ME"
