@@ -312,6 +312,7 @@ html{scroll-behavior:auto}
 .area-copy h3{margin-top:8px}
 .card.garden{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);align-items:stretch}
 .garden-photo{height:auto;aspect-ratio:1.78;min-height:0;max-height:none;background:#EAF7FC}
+.garden-photo img{object-fit:cover;object-position:left center}
 .garden-copy{display:flex;flex-direction:column;justify-content:center}
 .garden-copy h3{margin:8px 0 14px}
 .garden-copy .offerings{margin-top:12px}
@@ -330,6 +331,55 @@ html{scroll-behavior:auto}
 .area-gallery .agua-marketing{object-fit:contain;background:#F2E6DC}
 @media (max-width:860px){.area-gallery{grid-template-columns:1.2fr .9fr}}
 
+
+/* Hero: crecimiento inmobiliario costero y brecha de saneamiento */
+.hero{position:relative;isolation:isolate;overflow:hidden;background:#F2E6DC}
+.hero::before{content:"";position:absolute;z-index:-2;inset:-10px;background:url("assets/yakufil-costa-realista.webp") center 58%/cover no-repeat;filter:blur(0) saturate(1.02);transform:scale(1.02)}
+.hero::after{content:"";position:absolute;z-index:-1;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(242,230,220,.26) 0%,rgba(242,230,220,.14) 40%,rgba(242,230,220,.04) 100%),linear-gradient(0deg,rgba(242,230,220,.18) 0%,transparent 44%)}
+.hero .wrap{position:relative;z-index:1;grid-template-columns:minmax(0,760px) 1fr;min-height:clamp(620px,76vh,790px);padding-top:clamp(64px,8vw,112px);padding-bottom:clamp(64px,8vw,112px)}
+.hero-text{padding:clamp(22px,3vw,38px);border:1px solid #ffffff90;border-radius:24px;background:rgba(242,230,220,.28);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);box-shadow:0 18px 52px #0E336718}
+.hero h1{font-size:clamp(42px,4vw,60px)}
+.scene{display:block}
+@media(max-width:860px){
+.hero::before{background-position:62% center;filter:blur(1px) saturate(1.02)}
+.hero::after{background:linear-gradient(180deg,rgba(242,230,220,.16) 0%,rgba(242,230,220,.24) 55%,rgba(242,230,220,.12) 100%)}
+.hero .wrap{min-height:0;padding-top:36px;padding-bottom:26px}
+.hero-text{padding:24px 20px;border-radius:20px;background:rgba(242,230,220,.34)}
+.scene{display:block}
+}
+@media(prefers-reduced-motion:reduce){.hero::before{transform:none}}
+
+/* Guía de marca Yakufil: tipografía, paleta por área y hero */
+:root{--garden:#149880;--agua:#0E3367;--ssoma:#3DABC4;--ssoma-soft:#C2ECFF}
+.hero::before{background-image:url("assets/yakufil-costa-realista.webp");filter:blur(0) saturate(1.02)}
+.hero .wrap{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(16px,2.4vw,36px)}
+.hero-text{background:rgba(242,230,220,.28);border-color:#ffffffb8}
+.scene{display:block;width:100%;padding:12px;border:1px solid #ffffffa8;border-radius:24px;background:rgba(242,230,220,.19);-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);box-shadow:0 18px 52px #0E33672b;mask-image:none;-webkit-mask-image:none}
+.scene svg{display:block;width:100%;height:auto;border-radius:16px}
+.como{background:var(--garden);color:#fff}
+.como .mono{color:var(--ssoma-soft)}
+.como .head p,.step p{color:#E4F7EF}
+.steps::before{background:#0F7869}
+.steps::after{background:var(--ssoma-soft)}
+.step .dot::before{background:#0F7869}
+.step.lit .dot::before,.como .step.lit .dot::before{background:#C2ECFF}
+.step:not(.lit) h3{color:#B8E7D8}
+.card.garden{background:var(--garden)}
+#area-agua{background:var(--agua);color:#fff}
+#area-agua h3,#area-agua p{color:#fff}
+#area-agua .mono{color:var(--ssoma-soft)}
+#ssoma{background:var(--ssoma-soft);border:1.5px solid var(--ssoma);color:var(--agua)}
+#ssoma h3,#ssoma p{color:var(--agua)}
+#ssoma .mono{color:#176A7E}
+#ssoma .offerings li{border-color:#3DABC466;color:var(--agua)}
+#ssoma .offerings li:last-child{border-color:#3DABC466}
+#ssoma .area-photo{background-color:#E7F8FC}
+#area-agua .area-photo{background-color:#D9EEFA}
+@media(max-width:860px){
+ .hero .wrap{grid-template-columns:1fr;gap:14px}
+ .hero .scene{width:100%;margin:0;padding:6px;border-radius:18px}
+ .hero .scene svg{border-radius:12px}
+}
 </style>
 </head>
 <body>
@@ -457,7 +507,7 @@ let pastHero=false,atEnd=false;
 const setFab=()=>{const on=pastHero&&!atEnd;fab.classList.toggle("on",on);fab.setAttribute("aria-hidden",!on);fab.tabIndex=on?0:-1};
 new IntersectionObserver(([e])=>{pastHero=!e.isIntersecting&&e.boundingClientRect.top<0;setFab()}).observe(heroCtas);
 new IntersectionObserver(([e])=>{atEnd=e.isIntersecting;setFab()}).observe(contacto);
-const steps=q(".step"),rail=document.querySelector(".steps"),como=document.getElementById("como");
+const steps=q(".step"),rail=document.querySelector(".steps"),como=document.getElementById("garden");
 const still=matchMedia("(prefers-reduced-motion:reduce)");
 let tick=0,live=false,lastOn;
 const paint=()=>{tick=0;const r=rail.getBoundingClientRect(),vh=innerHeight;const p=still.matches?1:Math.min(Math.max((vh*.8-r.top)/(r.height*.9),0),1);rail.style.setProperty("--p",p);const n=p*(steps.length-1)+.02;steps.forEach((s,i)=>s.classList.toggle("lit",i<=n))};
@@ -470,3 +520,7 @@ addEventListener("resize",onScroll,{passive:true});
 </script>
 </body>
 </html>
+
+
+
+
