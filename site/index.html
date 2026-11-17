@@ -357,7 +357,7 @@ html{scroll-behavior:auto}
 .hero .wrap{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch;gap:clamp(16px,2.4vw,36px)}
 .hero-text{background:rgba(242,230,220,.28);border-color:#ffffffb8}
 .scene{display:flex;align-items:center;justify-content:center;width:100%;padding:14px;border:1px solid #ffffffa8;border-radius:24px;background:rgba(242,230,220,.48);box-shadow:0 16px 42px #0E336722;backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px);mask-image:none;-webkit-mask-image:none}
-.scene img{display:block;width:100%;max-width:100%;height:100%;object-fit:contain;border-radius:12px;filter:contrast(1.06) saturate(1.04)}
+.scene svg{display:block;width:100%;height:100%;overflow:visible}
 .como{background:var(--garden);color:#fff}
 .como .mono{color:var(--ssoma-soft)}
 .como .head p,.step p{color:#E4F7EF}
@@ -380,7 +380,7 @@ html{scroll-behavior:auto}
 @media(max-width:860px){
  .hero .wrap{grid-template-columns:1fr;gap:14px}
  .hero .scene{width:100%;margin:0;padding:7px;border-radius:18px;background:rgba(242,230,220,.48);border:1px solid #ffffffa8;box-shadow:0 14px 36px #0E336722}
- .hero .scene img{height:auto;border-radius:10px}
+ .hero .scene svg{height:auto}
 }
 </style>
 </head>
@@ -407,7 +407,32 @@ html{scroll-behavior:auto}
 <a class="under" href="#garden">Descubre cómo funciona</a>
 </div>
 </div>
-<div class="scene"><img src="assets/yakufil-garden-destacado.png" width="215" height="218" alt="Animación del sistema Yakufil Garden: módulos verticales de biofiltración con almacenamiento y reúso de agua." loading="eager"></div>
+<div class="scene">
+<svg class="reuse-flow" viewBox="0 0 1708 921" role="img" aria-labelledby="reuse-title reuse-desc" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+<title id="reuse-title">Sistema Yakufil de tratamiento y reúso de agua</title>
+<desc id="reuse-desc">El agua de cocina, inodoro, ducha y lavatorio se conduce al tratamiento preliminar, pasa por almacenamiento y biofiltración en jardines verticales, y llega al riego de plantas.</desc>
+<image href="assets/yakufil-sistema-transparente.png" width="1708" height="921" preserveAspectRatio="xMidYMid meet"/>
+<defs><filter id="flow-glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<g class="flow-pipes" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="18 120">
+<path class="flow-path" d="M85 505V576Q85 589 98 589H277V611H334H428Q441 611 441 624V646H490"><animate attributeName="stroke-dashoffset" begin="indefinite" from="0" to="-1000" dur="12s" repeatCount="indefinite"/></path>
+<path class="flow-path" d="M192 505V577"><animate attributeName="stroke-dashoffset" begin="indefinite" from="0" to="-1000" dur="4s" repeatCount="indefinite"/></path>
+<path class="flow-path" d="M334 505V611"><animate attributeName="stroke-dashoffset" begin="indefinite" from="0" to="-1000" dur="4s" repeatCount="indefinite"/></path>
+<path class="flow-path" d="M429 505V610"><animate attributeName="stroke-dashoffset" begin="indefinite" from="0" to="-1000" dur="4s" repeatCount="indefinite"/></path>
+<path class="flow-path" d="M700 662H800V215Q800 185 830 185H862"><animate attributeName="stroke-dashoffset" begin="indefinite" from="0" to="-1000" dur="12s" repeatCount="indefinite"/></path>
+<path class="flow-path" d="M991 211V349Q991 363 1005 363H1166Q1191 363 1191 388V474Q1191 490 1206 490H1403"><animate attributeName="stroke-dashoffset" begin="indefinite" from="0" to="-1000" dur="12s" repeatCount="indefinite"/></path>
+<path class="flow-path" d="M1544 473V394"><animate attributeName="stroke-dashoffset" begin="indefinite" from="0" to="-1000" dur="4s" repeatCount="indefinite"/></path>
+</g>
+<g class="flow-pipes flow-halo" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="18 120" filter="url(#flow-glow)" opacity=".92">
+<path class="flow-path" d="M85 505V576Q85 589 98 589H277V611H334H428Q441 611 441 624V646H490"><animate attributeName="stroke-dashoffset" begin="indefinite" from="0" to="-1000" dur="12s" repeatCount="indefinite"/></path>
+<path class="flow-path" d="M192 505V577"><animate attributeName="stroke-dashoffset" begin="indefinite" from="0" to="-1000" dur="4s" repeatCount="indefinite"/></path>
+<path class="flow-path" d="M334 505V611"><animate attributeName="stroke-dashoffset" begin="indefinite" from="0" to="-1000" dur="4s" repeatCount="indefinite"/></path>
+<path class="flow-path" d="M429 505V610"><animate attributeName="stroke-dashoffset" begin="indefinite" from="0" to="-1000" dur="4s" repeatCount="indefinite"/></path>
+<path class="flow-path" d="M700 662H800V215Q800 185 830 185H862"><animate attributeName="stroke-dashoffset" begin="indefinite" from="0" to="-1000" dur="12s" repeatCount="indefinite"/></path>
+<path class="flow-path" d="M991 211V349Q991 363 1005 363H1166Q1191 363 1191 388V474Q1191 490 1206 490H1403"><animate attributeName="stroke-dashoffset" begin="indefinite" from="0" to="-1000" dur="12s" repeatCount="indefinite"/></path>
+<path class="flow-path" d="M1544 473V394"><animate attributeName="stroke-dashoffset" begin="indefinite" from="0" to="-1000" dur="4s" repeatCount="indefinite"/></path>
+</g>
+</svg>
+</div>
 </div>
 </section>
 
@@ -501,7 +526,9 @@ html{scroll-behavior:auto}
 (()=>{
 const q=(s,r=document)=>[...r.querySelectorAll(s)];
 const top=document.getElementById("top"),scene=document.querySelector(".scene"),fab=document.getElementById("fab");
-new IntersectionObserver(([e])=>scene.classList.toggle("off",!e.isIntersecting)).observe(scene);
+const sceneSvg=scene.querySelector("svg"),still=matchMedia("(prefers-reduced-motion:reduce)");
+sceneSvg.querySelectorAll(".flow-path").forEach(path=>{const length=path.getTotalLength();const move=path.querySelector("animate");move.setAttribute("to",String(-length));move.setAttribute("dur",`${Math.max(3,length/45)}s`);move.beginElement()});
+new IntersectionObserver(([e])=>{scene.classList.toggle("off",!e.isIntersecting);if(!e.isIntersecting||still.matches)sceneSvg.pauseAnimations();else sceneSvg.unpauseAnimations()}).observe(scene);
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{rootMargin:"0px 0px -12% 0px"});
 q(".r,.rz,.resp").forEach(el=>io.observe(el));
 const heroCtas=document.querySelector(".hero .ctas"),contacto=document.getElementById("contacto");
@@ -510,7 +537,6 @@ const setFab=()=>{const on=pastHero&&!atEnd;fab.classList.toggle("on",on);fab.se
 new IntersectionObserver(([e])=>{pastHero=!e.isIntersecting&&e.boundingClientRect.top<0;setFab()}).observe(heroCtas);
 new IntersectionObserver(([e])=>{atEnd=e.isIntersecting;setFab()}).observe(contacto);
 const steps=q(".step"),rail=document.querySelector(".steps"),como=document.getElementById("garden");
-const still=matchMedia("(prefers-reduced-motion:reduce)");
 let tick=0,live=false,lastOn;
 const paint=()=>{tick=0;const r=rail.getBoundingClientRect(),vh=innerHeight;const p=still.matches?1:Math.min(Math.max((vh*.8-r.top)/(r.height*.9),0),1);rail.style.setProperty("--p",p);const n=p*(steps.length-1)+.02;steps.forEach((s,i)=>s.classList.toggle("lit",i<=n))};
 const onScroll=()=>{const on=scrollY>8;if(on!==lastOn){lastOn=on;top.classList.toggle("on",on)}if(live&&!tick)tick=requestAnimationFrame(paint)};
