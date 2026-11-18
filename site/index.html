@@ -391,15 +391,17 @@ html{scroll-behavior:auto}
  .hero .scene svg{height:auto}
 }
 .prob{background-color:#F2E6DC;background-image:linear-gradient(110deg,rgba(242,230,220,.94),rgba(242,230,220,.88)),url("assets/yakufil-textura-agua-crema.jpg");background-position:center;background-size:cover}
-.como{background-color:#0B725E;background-image:linear-gradient(110deg,rgba(8,91,77,.91),rgba(13,112,92,.88)),url("assets/yakufil-textura-agua-verde.jpg");background-position:center;background-size:cover}
+.como{background-color:#0B725E;background-image:linear-gradient(180deg,rgba(11,114,94,.22) 0%,transparent 16%,transparent 82%,rgba(242,230,220,.38) 100%),linear-gradient(110deg,rgba(8,91,77,.91),rgba(13,112,92,.88)),url("assets/yakufil-textura-agua-verde.jpg");background-position:center;background-size:cover}
 .como .head p,.como .step p{color:#F0FAF7}
 .como .steps::before{background:#77C7B7}
 .como .steps::after{background:#C2ECFF}
 .como .step .dot::before{background:#B4E4DA}
 .como .step.lit .dot::before{background:#fff}
 .como .step:last-child.lit .dot::before{background:#fff}
-.contacto{position:relative;isolation:isolate;overflow:hidden;background-color:#0E3367;background-image:linear-gradient(105deg,rgba(14,51,103,.76) 0%,rgba(14,98,122,.48) 55%,rgba(11,114,94,.48) 100%),url("assets/yakufil-contacto-agua-azul.jpg");background-position:center 56%;background-size:cover}
+.contacto{position:relative;isolation:isolate;overflow:hidden;background-color:#0E3367;background-image:linear-gradient(180deg,rgba(234,247,252,.48) 0%,rgba(234,247,252,.12) 18%,transparent 34%,transparent 78%,rgba(14,51,103,.72) 100%),linear-gradient(105deg,rgba(14,51,103,.14) 0%,rgba(14,98,122,.08) 55%,rgba(11,114,94,.16) 100%),url("assets/yakufil-contacto-agua.jpg");background-position:center,center,center 54%;background-size:cover}
 .prob{position:relative;isolation:isolate;overflow:hidden;color:#fff;background-color:#0E3367;background-image:radial-gradient(circle at 74% 46%,rgba(20,152,128,.66) 0%,rgba(20,152,128,.22) 28%,transparent 53%),linear-gradient(112deg,#0E3367 0%,#075A68 52%,#149880 100%);background-position:center;background-size:cover}
+.prob::before{content:"";position:absolute;z-index:0;inset:0 0 auto;height:clamp(100px,14vw,190px);pointer-events:none;background:linear-gradient(180deg,rgba(242,230,220,.48) 0%,rgba(242,230,220,.20) 30%,rgba(20,152,128,.10) 66%,transparent 100%)}
+.prob .wrap{position:relative;z-index:1}
 .prob .txt,.prob ol{border:1px solid rgba(194,236,255,.42);border-radius:24px;background:rgba(9,50,82,.35);box-shadow:0 18px 48px rgba(4,31,58,.16);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px)}
 .prob .txt{gap:20px;padding:clamp(24px,2.6vw,36px)}
 .prob h2,.prob li{color:#fff}
@@ -409,18 +411,13 @@ html{scroll-behavior:auto}
 .prob li,.prob li:last-child{border-color:rgba(194,236,255,.45)}
 .prob::after{content:"";position:absolute;z-index:-1;right:15%;top:18%;width:clamp(220px,28vw,390px);aspect-ratio:1;border:1px solid rgba(194,236,255,.16);border-radius:50%;box-shadow:0 0 0 28px rgba(194,236,255,.035),0 0 0 72px rgba(194,236,255,.025);pointer-events:none}
 .contacto .wrap{position:relative;z-index:1}
-.contacto .txt{padding:clamp(24px,3vw,38px);border:1px solid #ffffff85;border-radius:24px;background:rgba(14,51,103,.80);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);box-shadow:0 18px 52px #0E336730}
+.contacto .txt{padding:clamp(24px,3vw,38px);border:1px solid #ffffff85;border-radius:24px;background:rgba(11,92,76,.82);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);box-shadow:0 18px 52px #0E336730}
 .contacto p{color:#fff}
-.contacto .gota-agua{position:absolute;z-index:0;right:24%;top:17%;width:clamp(76px,9vw,126px);height:auto;overflow:visible;pointer-events:none;filter:drop-shadow(0 8px 14px rgba(8,50,86,.28))}
-.contacto .gota-agua .gota{transform-box:fill-box;transform-origin:center;animation:caida-gota 3.8s ease-in-out infinite}
-.contacto .gota-agua .onda{transform-box:fill-box;transform-origin:center;animation:onda-gota 3.8s ease-out infinite}
-@keyframes caida-gota{0%,12%{transform:translateY(-17px) scale(.9);opacity:0}28%{opacity:1}58%{transform:translateY(35px) scale(1);opacity:1}70%,100%{transform:translateY(43px) scale(.85);opacity:0}}
-@keyframes onda-gota{0%,52%{transform:scale(.45);opacity:0}65%{opacity:.72}100%{transform:scale(1.65);opacity:0}}
-@media(max-width:860px){.contacto{background-position:58% center}.contacto .gota-agua{right:7%;top:8%;width:64px;opacity:.78}.contacto .txt{background:rgba(14,51,103,.84)}}
-@media(prefers-reduced-motion:reduce){.contacto .gota-agua .gota,.contacto .gota-agua .onda{animation:none}.contacto .gota-agua .gota{opacity:.8}}
+.contacto .txt{background:rgba(11,92,76,.82)}
+@media(max-width:860px){.contacto{background-position:center,center,58% center}.contacto .txt{background:rgba(11,92,76,.86)}}
 .hero{background:#F2E6DC;color:#0E3367}
 .hero::before{inset:-12px;background-image:url("assets/yakufil-costa-realista.webp");background-position:center 58%;background-size:cover;filter:blur(1px) saturate(1.02);transform:scale(1.025)}
-.hero::after{background:linear-gradient(90deg,rgba(242,230,220,.22) 0%,rgba(242,230,220,.15) 46%,rgba(242,230,220,.06) 100%),linear-gradient(0deg,rgba(242,230,220,.14),transparent 46%)}
+.hero::after{background:linear-gradient(90deg,rgba(242,230,220,.22) 0%,rgba(242,230,220,.15) 46%,rgba(242,230,220,.06) 100%),linear-gradient(180deg,transparent 56%,rgba(11,114,94,.08) 74%,rgba(11,114,94,.42) 100%)}
 .hero .wrap{max-width:1120px;min-height:0;align-items:center;padding-top:clamp(38px,5vw,58px);padding-bottom:clamp(38px,5vw,58px)}
 .hero-text{height:clamp(410px,34vw,460px);display:flex;flex-direction:column;justify-content:center;gap:clamp(12px,1.4vw,18px);padding:clamp(20px,2.1vw,28px);border-color:#ffffffc2;background:rgba(242,230,220,.32);box-shadow:0 18px 52px #0E336722}
 .hero h1{font-size:clamp(34px,3.25vw,44px);line-height:1.04;letter-spacing:-.035em;color:#0E3367}
@@ -435,7 +432,7 @@ html{scroll-behavior:auto}
 .hero .btn{min-height:46px;padding:0 18px;background:#fff;color:#0E3367;border:1.5px solid #149880;font-size:14px}
 .hero .btn:hover{background:#E4F6F1;color:#0E3367}
 .hero .scene{height:clamp(410px,34vw,460px);border-color:#ffffffc2;background:rgba(242,230,220,.35);box-shadow:0 16px 42px #0E336722}
-@media(max-width:860px){.hero .wrap{min-height:0;padding-top:30px;padding-bottom:34px}.hero-text{height:auto;gap:18px;padding:24px 20px;background:rgba(242,230,220,.54)}.hero .scene{height:auto;aspect-ratio:1.12}.hero h1{font-size:clamp(36px,8vw,46px);line-height:1.06}.hero .lede{font-size:16px;line-height:24px}.hero::before{background-position:62% center;filter:blur(1.5px) saturate(1.02)}}
+@media(max-width:860px){.hero .wrap{min-height:0;padding-top:30px;padding-bottom:34px}.hero-text{height:auto;gap:18px;padding:24px 20px;background:rgba(242,230,220,.54)}.hero .scene{height:auto;aspect-ratio:1.12}.hero h1{font-size:clamp(36px,8vw,46px);line-height:1.06}.hero .lede{font-size:16px;line-height:24px}.hero::before{background-position:62% center;filter:blur(1.5px) saturate(1.02)}.hero::after{background:linear-gradient(180deg,rgba(242,230,220,.10) 0%,transparent 48%,rgba(11,114,94,.42) 100%)}}
 @media(prefers-reduced-motion:reduce){.hero::before{transform:none;background-image:url("assets/yakufil-costa-realista.webp")}}
 .top{background-color:#0E3367;background-image:linear-gradient(105deg,rgba(14,51,103,.72) 0%,rgba(7,90,104,.62) 54%,rgba(11,114,94,.66) 100%),url("assets/yakufil-hero-agua.gif");background-position:center 42%;background-size:cover;border-bottom-color:#C2ECFF66}
 .top.on{background-color:#0E3367;background-image:linear-gradient(105deg,rgba(14,51,103,.77) 0%,rgba(7,90,104,.70) 54%,rgba(11,114,94,.72) 100%),url("assets/yakufil-hero-agua.gif")}
@@ -453,12 +450,14 @@ html{scroll-behavior:auto}
 .brand-hero .brand-copy small{font-size:9px;color:#0B725E}
 @media(max-width:860px){.top .brand-lockup img{width:clamp(145px,38vw,190px);max-height:44px}.top .nav a{font-size:12px}.brand-hero{padding:8px 12px}.brand-hero img{width:46px;height:46px}.brand-hero .brand-copy strong{font-size:19px}}
 @media(prefers-reduced-motion:reduce){.top,.top.on{background-image:linear-gradient(105deg,rgba(14,51,103,.74),rgba(7,90,104,.67),rgba(11,114,94,.70)),url("assets/yakufil-hero-agua.jpg")}}
-.audiencia .wrap{display:grid;grid-template-columns:max-content repeat(4,minmax(0,1fr));align-items:stretch;gap:10px;padding:12px;border-radius:22px;background:#EAF7FC;color:#0E3367}
-.audiencia .mono{align-self:center;padding:0 8px;color:#149880}
-.audiencia-item{display:flex;align-items:center;min-width:0;gap:12px;padding:7px 10px;border-left:1px solid #3DABC455}
-.audiencia-item img{display:block;flex:0 0 76px;width:76px;height:58px;border:1px solid #fff;border-radius:9px;object-fit:cover;box-shadow:0 4px 12px #0E33671a}
-.audiencia-item span{font-size:14px;font-weight:600;line-height:1.25}
-@media(max-width:860px){.audiencia .wrap{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:12px;border-radius:20px}.audiencia .mono{grid-column:1/-1;padding:0 4px 4px}.audiencia-item{gap:9px;padding:6px}.audiencia-item img{flex-basis:70px;width:70px;height:54px}.audiencia-item span{font-size:13px}}
+.audiencia .wrap{display:grid;grid-template-columns:max-content repeat(4,minmax(0,1fr));align-items:stretch;gap:12px;padding-top:16px;padding-bottom:16px;border-radius:22px;background:#EAF7FC;color:#0E3367}
+.audiencia .mono{align-self:center;padding:0 8px;color:#149880;white-space:nowrap;font-size:14px}
+.audiencia-item{display:flex;align-items:center;min-width:0;gap:14px;padding:10px 12px;border-left:1px solid #3DABC455}
+.audiencia-item img{display:block;flex:0 0 96px;width:96px;height:72px;border:1px solid #fff;border-radius:10px;object-fit:cover;box-shadow:0 4px 12px #0E33671a}
+.audiencia-item span{min-width:0;font-size:16px;font-weight:600;line-height:1.25}
+@media(max-width:1100px){.audiencia .wrap{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.audiencia .mono{grid-column:1/-1;justify-self:start}.audiencia-item{gap:10px;padding:8px}.audiencia-item img{flex-basis:88px;width:88px;height:66px}.audiencia-item span{font-size:15px}}
+@media(max-width:860px){.audiencia .wrap{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding-top:14px;padding-bottom:14px;border-radius:20px}.audiencia .mono{grid-column:1/-1;padding:0 4px 4px}.audiencia-item{gap:10px;padding:8px}.audiencia-item img{flex-basis:82px;width:82px;height:62px}.audiencia-item span{font-size:14px}}
+@media(max-width:520px){.audiencia .wrap{grid-template-columns:1fr;gap:6px}.audiencia-item{gap:12px;padding:8px 10px}.audiencia-item img{flex-basis:96px;width:96px;height:72px}.audiencia-item span{font-size:16px}}
 .steps{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:48px}
 .steps::before,.steps::after{display:none}
 .step{gap:0;padding:0;overflow:visible;border:1px solid rgba(194,236,255,.62);border-radius:18px;background:#F8FCFB;color:#0E3367;box-shadow:0 16px 34px rgba(3,49,65,.18);transition:transform .3s var(--ease),box-shadow .3s,border-color .3s}
@@ -605,12 +604,6 @@ html{scroll-behavior:auto}
 </div>
 </section>
 <section class="contacto" id="contacto">
-<svg class="gota-agua" viewBox="0 0 120 180" aria-hidden="true" focusable="false">
-<defs><linearGradient id="gotaYakufil" x1=".18" y1=".12" x2=".82" y2=".94"><stop stop-color="#fff" stop-opacity=".96"/><stop offset=".35" stop-color="#C2ECFF" stop-opacity=".92"/><stop offset="1" stop-color="#3DABC4" stop-opacity=".84"/></linearGradient></defs>
-<ellipse class="onda" cx="60" cy="151" rx="31" ry="8" fill="none" stroke="#C2ECFF" stroke-width="3"/>
-<path class="gota" d="M60 17C49 40 26 66 26 96a34 34 0 0 0 68 0C94 66 71 40 60 17Z" fill="url(#gotaYakufil)" stroke="#fff" stroke-opacity=".88" stroke-width="2.5"/>
-<path d="M48 83c2-11 8-21 15-30" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="5" stroke-opacity=".9"/>
-</svg>
 <div class="wrap">
 <div class="txt r">
 <div class="mono">Hablemos</div>
