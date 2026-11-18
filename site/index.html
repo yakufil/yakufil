@@ -3,29 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Yakufil · Agua, sostenibilidad y eficiencia</title>
+<title>YAKUFIL · Donde el agua residual se transforma en vida</title>
 <meta name="description" content="Yakufil integra soluciones de tratamiento y reúso de agua con servicios de gestión ambiental y SSOMA para empresas y proyectos.">
-<meta name="theme-color" content="#F2E6DC">
-<meta property="og:title" content="Yakufil · Sostenibilidad y eficiencia">
+<meta name="theme-color" content="#0E3367">
+<meta property="og:title" content="YAKUFIL · Donde el agua residual se transforma en vida">
 <meta property="og:description" content="Tratamiento y reúso de agua, gestión ambiental y SSOMA.">
 <meta property="og:type" content="website">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<link rel="preload" href="fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/yakufil-sans-light.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="fonts/yakufil-sans-medium.ttf" as="font" type="font/ttf" crossorigin>
 <style>
-@font-face{font-family:Archivo;src:url(fonts/archivo.woff2) format("woff2");font-weight:700 800;font-display:swap}
-@font-face{font-family:Inter;src:url(fonts/inter.woff2) format("woff2");font-weight:400 600;font-display:swap}
-@font-face{font-family:"IBM Plex Mono";src:url(fonts/plex.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:Yakufil;src:url(fonts/yakufil-sans-light.ttf) format("truetype");font-weight:300 400;font-display:swap}
+@font-face{font-family:Yakufil;src:url(fonts/yakufil-sans-medium.ttf) format("truetype");font-weight:500 900;font-display:swap}
 :root{--sillar:#F2E6DC;--basalto:#0E3367;--cobre:#149880;--clara:#C2ECFF;--honda:#0E3367;--piedra:#526579;--texto:#334B65;--linea:#C7D2DB;--pad:clamp(20px,4.45vw,64px);--hh:76px;--ease:cubic-bezier(.2,.7,.2,1)}
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:var(--hh)}
-body{margin:0;background:var(--sillar);color:var(--basalto);font:400 16px/1.5 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{margin:0;background:var(--sillar);color:var(--basalto);font:400 16px/1.5 Yakufil,system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 a{color:inherit;text-decoration:none}
 svg{display:block}
 h1,h2,h3,p{margin:0}
 ul,ol{list-style:none;margin:0;padding:0}
 .wrap{width:100%;max-width:1440px;margin:0 auto;padding:0 var(--pad)}
-.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-weight:500;font-size:13px;line-height:16px;letter-spacing:.08em;text-transform:uppercase}
+.mono{font-family:"Yakufil",ui-monospace,monospace;font-weight:500;font-size:13px;line-height:16px;letter-spacing:.08em;text-transform:uppercase}
 .k{color:var(--cobre)}
 :focus-visible{outline:2px solid var(--cobre);outline-offset:3px;border-radius:8px}
 .wa{width:20px;height:20px;flex-shrink:0}
@@ -35,21 +34,21 @@ ul,ol{list-style:none;margin:0;padding:0}
 .top{position:sticky;top:0;z-index:20;height:var(--hh);border-bottom:1px solid #DCD7CC;background:var(--sillar);transition:background-color .3s}
 .top.on{background:#F2E6DCE0;-webkit-backdrop-filter:saturate(1.4) blur(12px);backdrop-filter:saturate(1.4) blur(12px)}
 .top .wrap{height:100%;display:flex;align-items:center;justify-content:space-between}
-.logo{display:flex;align-items:center;gap:10px;font:800 24px/28px Archivo,system-ui,sans-serif;letter-spacing:-.03em}
+.logo{display:flex;align-items:center;gap:10px;font:800 24px/28px Yakufil,system-ui,sans-serif;letter-spacing:-.03em}
 .logo svg{width:22px;height:26px}
 .nav{display:flex;align-items:center;gap:40px}
 .nav a{font-size:15px;font-weight:500;line-height:20px;color:#3B403C;transition:color .2s}
 .nav a:hover{color:var(--cobre)}
 .nav .cot{padding:11px 20px;border:1.5px solid var(--basalto);border-radius:999px;font-weight:600;color:var(--basalto);transition:background-color .25s,color .25s}
 .nav .cot:hover{background:var(--basalto);color:var(--sillar)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:999px;background:var(--cobre);color:#fff;font:600 16px/20px Inter,system-ui,sans-serif;transition:background-color .25s,transform .25s var(--ease)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:999px;background:var(--cobre);color:#fff;font:600 16px/20px Yakufil,system-ui,sans-serif;transition:background-color .25s,transform .25s var(--ease)}
 .btn:hover{background:#0F7C69;transform:translateY(-1px)}
 .under{padding-bottom:3px;border-bottom:1.5px solid var(--basalto);font-weight:600;line-height:20px;transition:color .2s,border-color .2s}
 .under:hover{color:var(--cobre);border-color:var(--cobre)}
 
 .hero .wrap{display:grid;grid-template-columns:minmax(0,600px) minmax(0,1fr);align-items:center;gap:24px;padding-top:28px;padding-bottom:28px}
 .hero-text{display:flex;flex-direction:column;gap:28px}
-h1{font:800 clamp(44px,5.3vw,76px)/1 Archivo,system-ui,sans-serif;letter-spacing:-.04em}
+h1{font:800 clamp(44px,5.3vw,76px)/1 Yakufil,system-ui,sans-serif;letter-spacing:-.04em}
 h1 .ln{display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
 h1 .ln>span{display:block;animation:rise .85s var(--ease) both}
 h1 .ln+.ln>span{animation-delay:.12s}
@@ -88,10 +87,10 @@ h1 .ln+.ln>span{animation-delay:.12s}
 .resp li{position:relative;display:flex;flex-direction:column;gap:6px;padding-top:18px}
 .resp li::before{content:"";position:absolute;top:0;left:0;right:0;height:1.5px;background:var(--basalto);transform-origin:0 50%;transform:scaleX(0);transition:transform .9s var(--ease) calc(var(--i)*110ms)}
 .resp.in li::before{transform:none}
-.resp b{font:800 28px/32px Archivo,system-ui,sans-serif;letter-spacing:-.02em}
+.resp b{font:800 28px/32px Yakufil,system-ui,sans-serif;letter-spacing:-.02em}
 .resp span{font-size:15px;line-height:22px;color:var(--piedra)}
 
-h2{font:800 clamp(34px,3.6vw,52px)/1.08 Archivo,system-ui,sans-serif;letter-spacing:-.035em;text-wrap:balance}
+h2{font:800 clamp(34px,3.6vw,52px)/1.08 Yakufil,system-ui,sans-serif;letter-spacing:-.035em;text-wrap:balance}
 .r{opacity:0}
 .r.in{animation:fade .75s var(--ease) calc(var(--i,0)*80ms) both}
 
@@ -121,7 +120,7 @@ h2{font:800 clamp(34px,3.6vw,52px)/1.08 Archivo,system-ui,sans-serif;letter-spac
 .step:last-child .dot::before{width:18px;height:18px}
 .step:last-child.lit .dot::before{background:var(--clara)}
 .step .mono{letter-spacing:.08em;text-transform:none}
-.step h3{margin-top:10px;font:700 26px/30px Archivo,system-ui,sans-serif;letter-spacing:-.02em;transition:color .4s}
+.step h3{margin-top:10px;font:700 26px/30px Yakufil,system-ui,sans-serif;letter-spacing:-.02em;transition:color .4s}
 .step:not(.lit) h3{color:#8DBAC8}
 .step p{margin-top:10px;font-size:16px;line-height:25px;color:#C2ECFF}
 
@@ -132,7 +131,7 @@ h2{font:800 clamp(34px,3.6vw,52px)/1.08 Archivo,system-ui,sans-serif;letter-spac
 .card:hover{translate:0 -4px;box-shadow:0 18px 40px -24px #0E336766}
 .card.a{background:var(--clara)}
 .card.b{border:1.5px solid var(--basalto)}
-.card h3{font:800 38px/42px Archivo,system-ui,sans-serif;letter-spacing:-.03em}
+.card h3{font:800 38px/42px Yakufil,system-ui,sans-serif;letter-spacing:-.03em}
 .card p{max-width:460px;margin-top:14px;font-size:17px;line-height:27px;color:#3B403C}
 
 .bio .wrap{display:grid;grid-template-columns:460px minmax(0,1fr);align-items:start;gap:96px;padding-top:88px;padding-bottom:72px}
@@ -140,7 +139,7 @@ h2{font:800 clamp(34px,3.6vw,52px)/1.08 Archivo,system-ui,sans-serif;letter-spac
 .bio h2{font-size:clamp(34px,3.1vw,44px)}
 .cmp{width:100%;margin-top:8px;border-collapse:collapse;font-size:17px;line-height:24px}
 .cmp th,.cmp td{padding:22px 24px 22px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--linea)}
-.cmp thead th{padding-top:0;padding-bottom:14px;border-bottom:1.5px solid var(--basalto);font:500 13px/16px "IBM Plex Mono",monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--piedra)}
+.cmp thead th{padding-top:0;padding-bottom:14px;border-bottom:1.5px solid var(--basalto);font:500 13px/16px "Yakufil",monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--piedra)}
 .cmp thead th.yk{color:var(--cobre)}
 .cmp tbody th{width:180px;font-weight:600}
 .cmp td{color:var(--piedra)}
@@ -257,7 +256,7 @@ html{scroll-behavior:auto}
 .area-card{justify-content:flex-start;gap:28px;min-height:450px}
 .area-card>div:last-child{display:flex;flex:1;flex-direction:column;align-items:flex-start}
 .subservice{width:100%;margin-top:26px;padding:20px 22px;border-left:3px solid #149880;background:#F2E6DC;border-radius:0 12px 12px 0}
-.subservice h4{margin:8px 0 4px;font:700 25px/30px Archivo,system-ui,sans-serif;color:#0E3367}
+.subservice h4{margin:8px 0 4px;font:700 25px/30px Yakufil,system-ui,sans-serif;color:#0E3367}
 .subservice p{margin-top:0;font-size:15px;line-height:23px}
 .offerings{display:flex;flex-direction:column;gap:0;width:100%;margin-top:18px}
 .offerings li{padding:12px 0;border-top:1px solid #C7D2DB;font-size:15px;line-height:22px;color:#334B65}
@@ -285,7 +284,7 @@ html{scroll-behavior:auto}
 .card.garden .offerings li:last-child{border-color:#ffffff55}
 .garden-benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:64px}
 .garden-benefits>div{display:flex;flex-direction:column;gap:8px;padding-top:18px;border-top:2px solid #3DABC4}
-.garden-benefits strong{font:700 20px/24px Archivo,system-ui,sans-serif;color:#fff}
+.garden-benefits strong{font:700 20px/24px Yakufil,system-ui,sans-serif;color:#fff}
 .garden-benefits span{font-size:15px;line-height:23px;color:#C2ECFF}
 .audiencia{padding:0 0 20px}
 .audiencia .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px 30px;padding-top:20px;padding-bottom:20px;border-radius:999px;background:#EAF7FC;color:#0E3367}
@@ -358,7 +357,7 @@ html{scroll-behavior:auto}
 .hero-text{padding:24px 20px;border-radius:20px;background:rgba(242,230,220,.34)}
 .scene{display:block}
 }
-@media(prefers-reduced-motion:reduce){.hero::before{transform:none}}
+@media(prefers-reduced-motion:reduce){.hero::before{transform:none;background-image:url("assets/yakufil-hero-agua.jpg")}}
 
 /* Guía de marca Yakufil: tipografía, paleta por área y hero */
 :root{--garden:#149880;--agua:#0E3367;--ssoma:#3DABC4;--ssoma-soft:#C2ECFF}
@@ -399,19 +398,97 @@ html{scroll-behavior:auto}
 .como .step .dot::before{background:#B4E4DA}
 .como .step.lit .dot::before{background:#fff}
 .como .step:last-child.lit .dot::before{background:#fff}
-.contacto{background-color:#0B725E;background-image:linear-gradient(105deg,rgba(8,78,66,.26) 0%,rgba(14,119,99,.20) 58%,rgba(7,91,77,.34) 100%),url("assets/yakufil-contacto-agua.jpg");background-position:center 52%;background-size:cover}
-.contacto .txt{padding:clamp(24px,3vw,38px);border:1px solid #ffffff85;border-radius:24px;background:rgba(8,78,66,.74);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);box-shadow:0 18px 52px #0E336730}
+.contacto{position:relative;isolation:isolate;overflow:hidden;background-color:#0E3367;background-image:linear-gradient(105deg,rgba(14,51,103,.76) 0%,rgba(14,98,122,.48) 55%,rgba(11,114,94,.48) 100%),url("assets/yakufil-contacto-agua-azul.jpg");background-position:center 56%;background-size:cover}
+.prob{position:relative;isolation:isolate;overflow:hidden;color:#fff;background-color:#0E3367;background-image:radial-gradient(circle at 74% 46%,rgba(20,152,128,.66) 0%,rgba(20,152,128,.22) 28%,transparent 53%),linear-gradient(112deg,#0E3367 0%,#075A68 52%,#149880 100%);background-position:center;background-size:cover}
+.prob .txt,.prob ol{border:1px solid rgba(194,236,255,.42);border-radius:24px;background:rgba(9,50,82,.35);box-shadow:0 18px 48px rgba(4,31,58,.16);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px)}
+.prob .txt{gap:20px;padding:clamp(24px,2.6vw,36px)}
+.prob h2,.prob li{color:#fff}
+.prob p{color:#E7F7FC}
+.prob .mono.k,.prob li .mono{color:#73E2D0}
+.prob ol{padding:16px clamp(24px,2.6vw,36px)}
+.prob li,.prob li:last-child{border-color:rgba(194,236,255,.45)}
+.prob::after{content:"";position:absolute;z-index:-1;right:15%;top:18%;width:clamp(220px,28vw,390px);aspect-ratio:1;border:1px solid rgba(194,236,255,.16);border-radius:50%;box-shadow:0 0 0 28px rgba(194,236,255,.035),0 0 0 72px rgba(194,236,255,.025);pointer-events:none}
+.contacto .wrap{position:relative;z-index:1}
+.contacto .txt{padding:clamp(24px,3vw,38px);border:1px solid #ffffff85;border-radius:24px;background:rgba(14,51,103,.80);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);box-shadow:0 18px 52px #0E336730}
 .contacto p{color:#fff}
+.contacto .gota-agua{position:absolute;z-index:0;right:24%;top:17%;width:clamp(76px,9vw,126px);height:auto;overflow:visible;pointer-events:none;filter:drop-shadow(0 8px 14px rgba(8,50,86,.28))}
+.contacto .gota-agua .gota{transform-box:fill-box;transform-origin:center;animation:caida-gota 3.8s ease-in-out infinite}
+.contacto .gota-agua .onda{transform-box:fill-box;transform-origin:center;animation:onda-gota 3.8s ease-out infinite}
+@keyframes caida-gota{0%,12%{transform:translateY(-17px) scale(.9);opacity:0}28%{opacity:1}58%{transform:translateY(35px) scale(1);opacity:1}70%,100%{transform:translateY(43px) scale(.85);opacity:0}}
+@keyframes onda-gota{0%,52%{transform:scale(.45);opacity:0}65%{opacity:.72}100%{transform:scale(1.65);opacity:0}}
+@media(max-width:860px){.contacto{background-position:58% center}.contacto .gota-agua{right:7%;top:8%;width:64px;opacity:.78}.contacto .txt{background:rgba(14,51,103,.84)}}
+@media(prefers-reduced-motion:reduce){.contacto .gota-agua .gota,.contacto .gota-agua .onda{animation:none}.contacto .gota-agua .gota{opacity:.8}}
+.hero{background:#F2E6DC;color:#0E3367}
+.hero::before{inset:-12px;background-image:url("assets/yakufil-costa-realista.webp");background-position:center 58%;background-size:cover;filter:blur(1px) saturate(1.02);transform:scale(1.025)}
+.hero::after{background:linear-gradient(90deg,rgba(242,230,220,.22) 0%,rgba(242,230,220,.15) 46%,rgba(242,230,220,.06) 100%),linear-gradient(0deg,rgba(242,230,220,.14),transparent 46%)}
+.hero .wrap{max-width:1120px;min-height:0;align-items:center;padding-top:clamp(38px,5vw,58px);padding-bottom:clamp(38px,5vw,58px)}
+.hero-text{height:clamp(410px,34vw,460px);display:flex;flex-direction:column;justify-content:center;gap:clamp(12px,1.4vw,18px);padding:clamp(20px,2.1vw,28px);border-color:#ffffffc2;background:rgba(242,230,220,.32);box-shadow:0 18px 52px #0E336722}
+.hero h1{font-size:clamp(34px,3.25vw,44px);line-height:1.04;letter-spacing:-.035em;color:#0E3367}
+.hero h1 .ln{padding-bottom:.04em;margin-bottom:.035em}
+.hero h1 .ln:last-child span{color:#149880}
+.hero h1 .residual{font-style:normal;color:#0E3367}
+.hero .kick{color:#149880}
+.hero .lede{font-size:16px;line-height:24px;color:#0E3367}
+.hero .under{color:#0E3367;border-color:#0E3367}
+.hero .under:hover{color:#149880;border-color:#149880}
+.hero .ctas{gap:14px}
+.hero .btn{min-height:46px;padding:0 18px;background:#fff;color:#0E3367;border:1.5px solid #149880;font-size:14px}
+.hero .btn:hover{background:#E4F6F1;color:#0E3367}
+.hero .scene{height:clamp(410px,34vw,460px);border-color:#ffffffc2;background:rgba(242,230,220,.35);box-shadow:0 16px 42px #0E336722}
+@media(max-width:860px){.hero .wrap{min-height:0;padding-top:30px;padding-bottom:34px}.hero-text{height:auto;gap:18px;padding:24px 20px;background:rgba(242,230,220,.54)}.hero .scene{height:auto;aspect-ratio:1.12}.hero h1{font-size:clamp(36px,8vw,46px);line-height:1.06}.hero .lede{font-size:16px;line-height:24px}.hero::before{background-position:62% center;filter:blur(1.5px) saturate(1.02)}}
+@media(prefers-reduced-motion:reduce){.hero::before{transform:none;background-image:url("assets/yakufil-costa-realista.webp")}}
+.top{background-color:#0E3367;background-image:linear-gradient(105deg,rgba(14,51,103,.72) 0%,rgba(7,90,104,.62) 54%,rgba(11,114,94,.66) 100%),url("assets/yakufil-hero-agua.gif");background-position:center 42%;background-size:cover;border-bottom-color:#C2ECFF66}
+.top.on{background-color:#0E3367;background-image:linear-gradient(105deg,rgba(14,51,103,.77) 0%,rgba(7,90,104,.70) 54%,rgba(11,114,94,.72) 100%),url("assets/yakufil-hero-agua.gif")}
+.top .brand-lockup{gap:0;font-size:initial;line-height:normal;letter-spacing:normal;color:#fff}
+.top .brand-lockup img{width:clamp(150px,17vw,220px);height:auto;max-height:50px;object-fit:contain;padding:0;border-radius:0;background:transparent}
+.brand-copy{display:flex;flex-direction:column;gap:2px;line-height:1}
+.brand-copy strong{font-size:23px;font-weight:500;letter-spacing:.11em}
+.brand-copy small{font-size:9px;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:#C2ECFF}
+.top .nav a{color:#fff;text-transform:uppercase;letter-spacing:.055em;font-size:13px}
+.top .nav .cot{border-color:#C2ECFF;color:#fff}
+.top .nav .cot:hover{background:#fff;color:#0E3367}
+.brand-hero{gap:12px;padding:9px 16px;border-color:#C2ECFF88;background:rgba(255,255,255,.94)}
+.brand-hero img{width:54px;height:54px;object-fit:contain}
+.brand-hero .brand-copy strong{font-size:23px;color:#0E3367}
+.brand-hero .brand-copy small{font-size:9px;color:#0B725E}
+@media(max-width:860px){.top .brand-lockup img{width:clamp(145px,38vw,190px);max-height:44px}.top .nav a{font-size:12px}.brand-hero{padding:8px 12px}.brand-hero img{width:46px;height:46px}.brand-hero .brand-copy strong{font-size:19px}}
+@media(prefers-reduced-motion:reduce){.top,.top.on{background-image:linear-gradient(105deg,rgba(14,51,103,.74),rgba(7,90,104,.67),rgba(11,114,94,.70)),url("assets/yakufil-hero-agua.jpg")}}
+.audiencia .wrap{display:grid;grid-template-columns:max-content repeat(4,minmax(0,1fr));align-items:stretch;gap:10px;padding:12px;border-radius:22px;background:#EAF7FC;color:#0E3367}
+.audiencia .mono{align-self:center;padding:0 8px;color:#149880}
+.audiencia-item{display:flex;align-items:center;min-width:0;gap:12px;padding:7px 10px;border-left:1px solid #3DABC455}
+.audiencia-item img{display:block;flex:0 0 76px;width:76px;height:58px;border:1px solid #fff;border-radius:9px;object-fit:cover;box-shadow:0 4px 12px #0E33671a}
+.audiencia-item span{font-size:14px;font-weight:600;line-height:1.25}
+@media(max-width:860px){.audiencia .wrap{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:12px;border-radius:20px}.audiencia .mono{grid-column:1/-1;padding:0 4px 4px}.audiencia-item{gap:9px;padding:6px}.audiencia-item img{flex-basis:70px;width:70px;height:54px}.audiencia-item span{font-size:13px}}
+.steps{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:48px}
+.steps::before,.steps::after{display:none}
+.step{gap:0;padding:0;overflow:visible;border:1px solid rgba(194,236,255,.62);border-radius:18px;background:#F8FCFB;color:#0E3367;box-shadow:0 16px 34px rgba(3,49,65,.18);transition:transform .3s var(--ease),box-shadow .3s,border-color .3s}
+.step:hover{transform:translateY(-4px);box-shadow:0 22px 40px rgba(3,49,65,.24)}
+.step.lit{border-color:#73E2D0}
+.step-media{position:relative;aspect-ratio:1.55;overflow:hidden;border-radius:17px 17px 0 0;background:#D5EEF1}
+.step-media img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
+.step:nth-child(3) .step-media img{object-position:50% 91%}
+.step:hover .step-media img{transform:scale(1.035)}
+.step-number{position:absolute;top:12px;left:12px;display:grid;place-items:center;width:40px;height:40px;border:2px solid #fff;border-radius:50%;background:#0E3367;color:#fff;font:500 17px/1 Yakufil,sans-serif;box-shadow:0 5px 14px #0E336744;transition:background-color .3s}
+.step.lit .step-number{background:#149880}
+.step-content{display:flex;flex:1;flex-direction:column;padding:18px 18px 20px}
+.step-content .mono{color:#149880;font-size:11px;line-height:14px;letter-spacing:.07em}
+.step h3{margin-top:8px;color:#0E3367;font:500 23px/1.12 Yakufil,system-ui,sans-serif;letter-spacing:-.02em}
+.step p{margin-top:9px;color:#526579;font-size:14px;line-height:21px}
+.como .step p{color:#526579}
+.step:not(:last-child)::after{content:"›";position:absolute;z-index:3;top:70px;right:-20px;display:grid;place-items:center;width:34px;height:34px;border:2px solid #fff;border-radius:50%;background:#149880;color:#fff;font:500 30px/1 Yakufil,sans-serif;box-shadow:0 5px 16px #0E336733}
+.step:not(.lit) h3{color:#0E3367}
+@media(max-width:1100px){.steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.step:not(:last-child)::after{display:none}}
+@media(max-width:620px){.steps{grid-template-columns:1fr;gap:16px;margin-top:34px}.step-media{aspect-ratio:1.65}.step-content{padding:17px}.step h3{font-size:22px}}
 </style>
 </head>
 <body>
 <header class="top" id="top">
 <div class="wrap">
-<a class="logo" href="#inicio" aria-label="Yakufil, inicio"><img src="assets/logo-yakufil-horizontal.png" alt="Yakufil · Sostenibilidad y Eficiencia"></a>
+<a class="logo brand-lockup" href="#inicio" aria-label="Yakufil, inicio"><img src="assets/logo-yakufil-sobre-agua.png" alt="YAKUFIL · Sostenibilidad y Eficiencia"></a>
 <nav class="nav" aria-label="Secciones">
-<a href="#garden">Yakufil Garden</a>
-<a href="#areas">Nuestras áreas</a>
-<a class="cot" href="https://wa.me/51951406240?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20Yakufil%20Garden" target="_blank" rel="noopener">Conversemos</a>
+<a href="#garden">YAKUFIL GARDEN</a>
+<a href="#areas">NUESTRAS ÁREAS</a>
+<a class="cot" href="https://wa.me/51951406240?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20Yakufil%20Garden" target="_blank" rel="noopener">CONVERSEMOS</a>
 </nav>
 </div>
 </header>
@@ -420,7 +497,7 @@ html{scroll-behavior:auto}
 <div class="wrap">
 <div class="hero-text">
 <div class="mono k kick">YAKUFIL GARDEN · BIOFILTRACIÓN Y REÚSO</div>
-<h1><span class="ln"><span>YAKUFIL, donde el agua</span></span><span class="ln"><span>se transforma en vida.</span></span></h1>
+<h1><span class="ln"><span>YAKUFIL, donde el agua</span></span><span class="ln"><span><em class="residual">residual</em> se transforma en vida.</span></span></h1>
 <p class="lede">YAKUFIL GARDEN integra tratamiento de aguas grises, biofiltración y vegetación para dar nueva vida a los espacios del proyecto.</p>
 <div class="ctas">
 <a class="btn" href="https://wa.me/51951406240?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20Yakufil%20Garden" target="_blank" rel="noopener"><svg class="wa" viewBox="0 0 24 24" aria-hidden="true"><path class="o" d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/><path class="i" d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 .9c-1.2-.5-2.2-1.5-2.7-2.7l.9-1-1-2L9 8.5Z"/></svg>Conversemos sobre Garden</a>
@@ -476,14 +553,14 @@ html{scroll-behavior:auto}
 <section class="como" id="garden">
 <div class="wrap">
 <div class="head">
-<div class="r"><div class="mono">YAKUFIL GARDEN · Qué es</div><h2>Biofiltración, reúso de agua y áreas verdes en un mismo sistema.</h2></div>
+<div class="r"><div class="mono">YAKUFIL GARDEN · Proceso de reúso</div><h2>Biofiltración, reúso de agua y áreas verdes en un mismo sistema.</h2></div>
 <p class="r" style="--i:1">Una solución que trata aguas grises e integra vegetación. El agua tratada puede destinarse a usos no potables, como riego, según el diseño y su calidad.</p>
 </div>
 <ol class="steps">
-<li class="step"><span class="dot"></span><div><div class="mono">01</div><h3>Recibimos el agua</h3><p>Evaluamos las aguas grises y las condiciones del proyecto para definir el sistema.</p></div></li>
-<li class="step"><span class="dot"></span><div><div class="mono">02</div><h3>Aplicamos biofiltración</h3><p>El tratamiento combina procesos de filtración y vegetación en una solución basada en la naturaleza.</p></div></li>
-<li class="step"><span class="dot"></span><div><div class="mono">03</div><h3>Integramos áreas verdes</h3><p>Los jardines verticales hacen visible la relación entre tratamiento de agua y paisaje.</p></div></li>
-<li class="step"><span class="dot"></span><div><div class="mono">04</div><h3>Reutilizamos</h3><p>El agua tratada puede aprovecharse para riego u otros usos no potables, de acuerdo con su calidad.</p></div></li>
+<li class="step"><div class="step-media"><img src="assets/proceso-01-aguas-grises.jpg" alt="Ingeniera inspecciona la captación de aguas grises y tuberías de una vivienda" loading="lazy"><span class="step-number">01</span></div><div class="step-content"><div class="mono">AGUAS GRISES</div><h3>Captación del agua</h3><p>Recolectamos las aguas de duchas, lavabos y lavandería, según las condiciones del proyecto.</p></div></li>
+<li class="step"><div class="step-media"><img src="assets/proceso-02-tratamiento.jpg" alt="Ingeniera revisa un sistema de tratamiento de aguas con cámaras y medios filtrantes" loading="lazy"><span class="step-number">02</span></div><div class="step-content"><div class="mono">TRATAMIENTO</div><h3>Pretratamiento</h3><p>La sedimentación y el tratamiento anaerobio separan sólidos y acondicionan el agua para la siguiente etapa.</p></div></li>
+<li class="step"><div class="step-media"><img src="assets/proceso-03-biofiltracion.jpg" alt="Sistema real Yakufil Garden con módulos verticales y helechos añadidos sutilmente" loading="lazy"><span class="step-number">03</span></div><div class="step-content"><div class="mono">YAKUFIL GARDEN</div><h3>Biofiltración y áreas verdes</h3><p>La vegetación y los biojardines integran el tratamiento del agua con el paisaje del proyecto.</p></div></li>
+<li class="step"><div class="step-media"><img src="assets/proceso-04-reuso.jpg" alt="Agua tratada llega mediante riego por goteo a un jardín paisajístico" loading="lazy"><span class="step-number">04</span></div><div class="step-content"><div class="mono">AGUA REUTILIZADA</div><h3>Reúso para riego</h3><p>El agua tratada puede destinarse al riego y a otros usos no potables, según su calidad y diseño.</p></div></li>
 </ol>
 <div class="garden-benefits">
 <div><strong>Reúso de agua</strong><span>Agua tratada para riego y otros usos no potables, de acuerdo con su calidad.</span></div>
@@ -519,9 +596,21 @@ html{scroll-behavior:auto}
 
 
 <section class="audiencia" aria-label="Sectores a los que se dirige Yakufil">
-<div class="wrap"><span class="mono">Soluciones para</span><span>Empresas manufactureras</span><span>Hoteles y ecolodges</span><span>Inmobiliarias</span><span>Constructoras</span></div>
+<div class="wrap">
+<span class="mono">Soluciones para</span>
+<div class="audiencia-item"><img src="assets/sector-industria-thumb.jpg" alt="Equipo Yakufil en una instalación industrial" loading="lazy"><span>Empresas manufactureras</span></div>
+<div class="audiencia-item"><img src="assets/sector-ecolodge.webp" alt="Ecolodge rodeado de paisaje natural" loading="lazy"><span>Hoteles y ecolodges</span></div>
+<div class="audiencia-item"><img src="assets/sector-inmobiliarias.jpg" alt="Solución Yakufil Garden para proyectos inmobiliarios" loading="lazy"><span>Inmobiliarias</span></div>
+<div class="audiencia-item"><img src="assets/sector-humedal-thumb.jpg" alt="Implementación y trabajo en un humedal natural" loading="lazy"><span>Constructoras</span></div>
+</div>
 </section>
 <section class="contacto" id="contacto">
+<svg class="gota-agua" viewBox="0 0 120 180" aria-hidden="true" focusable="false">
+<defs><linearGradient id="gotaYakufil" x1=".18" y1=".12" x2=".82" y2=".94"><stop stop-color="#fff" stop-opacity=".96"/><stop offset=".35" stop-color="#C2ECFF" stop-opacity=".92"/><stop offset="1" stop-color="#3DABC4" stop-opacity=".84"/></linearGradient></defs>
+<ellipse class="onda" cx="60" cy="151" rx="31" ry="8" fill="none" stroke="#C2ECFF" stroke-width="3"/>
+<path class="gota" d="M60 17C49 40 26 66 26 96a34 34 0 0 0 68 0C94 66 71 40 60 17Z" fill="url(#gotaYakufil)" stroke="#fff" stroke-opacity=".88" stroke-width="2.5"/>
+<path d="M48 83c2-11 8-21 15-30" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="5" stroke-opacity=".9"/>
+</svg>
 <div class="wrap">
 <div class="txt r">
 <div class="mono">Hablemos</div>
